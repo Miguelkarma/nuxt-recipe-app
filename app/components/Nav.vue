@@ -5,7 +5,7 @@
     <header class="py-4 border-b">
       <nav class="flex container items-center">
         <nuxt-link to="/" class="flex gap-1 items-center">
-          <Icon name="lucide:cooking-pot" class="text-xl" />
+          <NuxtImg width="56px" src="logo.png" densities="1x" format="webp" />
           <span class="text-3xl font-bold ml-1">Ricipe</span>
         </nuxt-link>
         <ul class="flex gap-6 ml-auto text-xl font-bold capitalize">
