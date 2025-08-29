@@ -6,6 +6,13 @@ const id = route.params.id;
 const { data: recipe, error } = await useFetch<Recipe>(
   `https://dummyjson.com/recipes/${id}`
 );
+
+if (error.value) {
+  throw createError({
+    statusCode: error.value.statusCode || 500,
+    statusMessage: error.value.statusMessage || "Something went wrong",
+  });
+}
 </script>
 
 <template>
