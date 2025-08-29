@@ -80,6 +80,7 @@ const { data, error } = await useFetch<RecipeResponse>(
               </div>
             </div>
             <NuxtLink
+              :to="`/recipes/${recipe.id}`"
               class="px-4 py-2 text-white self-start bg-gray-800 rounded-md text-lg cursor-pointer"
             >
               <span>View Recipe</span>
